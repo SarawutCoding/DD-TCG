@@ -42,10 +42,15 @@
             
             <div class="zone action-box">
                 <div style="font-size: 14px; text-align: left; width: 100%;">
-                    <input type="checkbox"> Summon<br>
-                    <input type="checkbox"> Combat<br>
-                    <input type="checkbox"> Move
+                    <input type="radio" id="summon" name="action" value="summon"> 
+                    <label for="summon">Summon</label><br>
+                    <input type="radio" id="combat" name="action" value="combat"> 
+                    <label for="combat">Combat</label><br>
+                    <input type="radio" id="move" name="action" value="move"> 
+                    <label for="move">Move</label><br>
                 </div>
+                <br>
+                <button type="button" onclick="resetTrue()">Reset</button>
             </div>
             <div class="zone deck-zone drop-zone" id="deckNode" onclick="drawCard()">
                 <span id="deckLabel">Deck<br>Zone</span>

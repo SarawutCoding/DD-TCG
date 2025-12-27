@@ -223,3 +223,7 @@ const fileIn = document.getElementById('fileIn');
             });
             ptZone.querySelector('span')?.remove();
         };
+
+const resetTrue = () =>{
+    document.getElementsByName('action').forEach(el => el.checked = false);
+}
